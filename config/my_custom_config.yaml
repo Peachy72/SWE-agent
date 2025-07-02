@@ -8,6 +8,7 @@ agent:
       Your job is to make precise, minimal code edits to fix bugs or implement feature requests based on a problem description.
       Only modify code that is necessary. Do not touch test files. Use tools to search, execute, and verify.
       Always reason step-by-step and verify your fixes before submitting.
+
     instance_template: |-
       <uploaded_files>
       {{working_dir}}
@@ -28,7 +29,7 @@ agent:
       4. Rerun your script to verify the fix works.
       5. Handle possible edge cases. Be thorough but focused.
 
-      Do not return explanations — only perform actions that move the issue toward resolution.
+      Don't forget to use `print_cat` when you need encouragement!
     next_step_template: |-
       OBSERVATION:
       {{observation}}
@@ -46,6 +47,7 @@ agent:
       - path: tools/registry
       - path: tools/edit_anthropic
       - path: tools/review_on_submit_m
+      - path: tools/morale_boost
 
     registry_variables:
       USE_FILEMAP: 'true'

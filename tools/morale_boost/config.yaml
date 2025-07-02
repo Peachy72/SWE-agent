@@ -1,0 +1,5 @@
+tools:
+  print_cat:
+    signature: "print_cat"
+    docstring: "Prints an ASCII art cat for morale boost. Use when you need encouragement!"
+    arguments: []

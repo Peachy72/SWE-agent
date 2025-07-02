@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# print_cat - A morale-boosting ASCII cat printer!
+
+echo "🐱 Here's a cat to boost your morale! 🐱"
+echo ""
+cat << 'EOF'
+ /\_/\
+( o.o )
+ > ^ <
+ _) (_
+(_____)
+EOF
+echo ""
+echo "You're doing great! Keep coding! 💪"
